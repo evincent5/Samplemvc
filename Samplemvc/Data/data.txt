@@ -1,0 +1,23 @@
+﻿
+Home -> Track -> OnActionExecuting 	 - 22/06/2017 01:18:55
+
+Home -> Track -> OnActionExecuted 	 - 22/06/2017 01:18:56
+
+Home -> Track -> OnResultExecuting 	 - 22/06/2017 01:18:56
+
+Home -> Track -> OnResultExecuted 	 - 22/06/2017 01:18:56
+-----------------------------
+Home -> Track -> OnActionExecuting 	 - 22/06/2017 01:19:29
+
+Home -> Track -> OnActionExecuted 	 - 22/06/2017 01:19:29
+
+Home -> Track -> OnResultExecuting 	 - 22/06/2017 01:19:29
+
+Home -> Track -> OnResultExecuted 	 - 22/06/2017 01:19:29
+-----------------------------
+Home -> welcome -> OnActionExecuting 	 - 22/06/2017 01:22:18
+
+Home -> welcome -> OnActionExecuted 	 - 22/06/2017 01:22:18
+
+Home -> welcome ->Exception Occured 	 - 22/06/2017 01:22:18
+-----------------------------

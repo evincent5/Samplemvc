@@ -1,0 +1,165 @@
+﻿@model Schoolmvc.Models.Request
+
+@{
+    ViewBag.Title = "Create";
+}
+@section Scripts
+       {
+    <script src="@Url.Content("~/Scripts/JavaScript.js")"
+            type="text/javascript"></script>
+}
+<h1>Upcoming Course Information - Request Form</h1>
+@using (Html.BeginForm())
+{
+<div class="form-horizontal">
+    <div class="form-group">
+        @Html.LabelFor(model => model.FirstName, htmlAttributes: new
+   {
+       @class = "control-label col-sm-4"
+   })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.FirstName, new
+       {
+           htmlAttributes = new { @class = "form-control" }
+       })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.LastName, htmlAttributes: new
+   {
+       @class = "control-label col-sm-4"
+   })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.LastName, new
+       {
+           htmlAttributes = new { @class = "form-control" }
+       })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PhoneNumber, htmlAttributes: new
+   {
+       @class = "control-label col-sm-4"
+   })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.PhoneNumber, new
+       {
+           htmlAttributes = new { @class = "form-control" }
+       })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.City, htmlAttributes: new
+   {
+       @class = "control-label col-sm-4"
+   })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.City, new
+       {
+           htmlAttributes = new { @class = "form-control" }
+       })
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label id="lblState" class="col-sm-4 control-label">State:</label>
+        <div class="col-sm-8">
+            @Html.DropDownList("StateId", (List<SelectListItem>)ViewBag.States,
+        new { @class = "form-control" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+        <label id="lblCallingTime" class="col-sm-4 control-label">CallingTime:</label>
+        <div class="col-sm-8">
+            <select id="ddlCallingTime" onchange="callingTimeChanged()" class="form-control">
+                <option value="0">--</option>
+                <option value="1">Morning</option>
+                <option value="2">Afternoon</option>
+                <option value="3">Evening</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="LatestTime" style="display:none">
+        <div class="form-group">
+            <label id="lblLatestTime" class="col-sm-4 control-label">Latest Time:</label>
+            <div class="col-sm-8">
+                <input id="txtLatestTime" type="text" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label id="lblTraining" class="col-sm-4 control-label">Training:</label>
+        <div class="col-sm-8">
+            <input id="chkTraining101" name="checkBoxes" type="checkbox">
+            <label>Training 101</label><br>
+            <input id="chkTraining102" checked name="checkBoxes" type="checkbox">
+            <label>Training 102</label><br>
+            <input id="chkTraining103" name="checkBoxes" type="checkbox">
+            <label>Training 103</label><br>
+            <input id="chkTraining104" name="checkBoxes" type="checkbox">
+            <label>Training 104</label><br>
+        </div>
+    </div>*@
+    <div class="form-group">
+        @Html.LabelFor(model => model.EmailAddress, htmlAttributes: new
+   {
+       @class = "control-label col-sm-4"
+   })
+        <div class="col-sm-8">
+            @Html.EditorFor(model => model.EmailAddress, new
+       {
+           htmlAttributes = new { @class = "form-control" }
+       })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+        <label id="lblComments" class="col-sm-4 control-label">Comments:</label>
+        <div class="col-sm-8">
+            <textarea id="txtComment" cols="50" maxlength="20" placeholder="Comments" class="form-control"></textarea>
+        </div>
+        <label id="lblTextRemaining" class="col-sm-offset-4 col-sm-8">
+            (20) characters remaining
+        </label>
+    </div>*@
+
+    <hr />
+
+    <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-8">
+            <input class="btn btn-primary" id="btnSubmit" type="submit" value="Submit" />
+            <input class="btn btn-success" id="btnReset" type="reset" value="Reset" />
+        </div>
+    </div>
+
+</div>}
+<div>Last updated: @DateTime.Now</div>
+
+@section footer
+   {
+    <footer class="footer">
+        <p class="navbar-text text-center">
+            All rights reserved
+            <span class="glyphicon glyphicon-copyright-mark"></span>
+        </p>
+    </footer>
+}
+
+@*@section footer
+   {
+    <footer class="navbar navbar-inverse">
+        <p class="navbar-text text-center">
+            All rights reserved
+            <span class="glyphicon glyphicon-copyright-mark"></span>
+        </p>
+    </footer>
+}*@
+
